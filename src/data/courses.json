@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": {
+      "name": "John Doe",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch using HTML, CSS, JavaScript, and backend technologies.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "category": "Development",
+    "popular": false
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Mastery",
+    "instructor": {
+      "name": "Sarah Lee",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+    },
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Deep dive into JavaScript, ES6+, asynchronous programming, and real-world projects.",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "category": "Development",
+    "popular": false
+  },
+  {
+    "id": 3,
+    "title": "React JS Complete Guide",
+    "instructor": {
+      "name": "Michael Chen",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Build modern web apps using React, hooks, context API, and best practices.",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "category": "Development",
+    "popular": true
+  },
+  {
+    "id": 4,
+    "title": "Node.js & Express API Development",
+    "instructor": {
+      "name": "David Kim",
+      "avatar": "https://images.unsplash.com/photo-1552058544-f2b08422138a"
+    },
+    "duration": "14 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Learn backend development with Node.js, Express, and REST API design.",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "category": "Development",
+    "popular": false
+  },
+  {
+    "id": 5,
+    "title": "Python for Beginners",
+    "instructor": {
+      "name": "Emily Watson",
+      "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39"
+    },
+    "duration": "12 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Start programming with Python, covering basics, loops, functions, and projects.",
+    "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    "category": "Programming",
+    "popular": false
+  },
+  {
+    "id": 6,
+    "title": "AI & Machine Learning Fundamentals",
+    "instructor": {
+      "name": "Andrew Ng",
+      "avatar": "https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+    },
+    "duration": "22 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Understand AI concepts, machine learning models, and real-world applications.",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    "category": "AI",
+    "popular": true
+  },
+  {
+    "id": 7,
+    "title": "Data Structures & Algorithms",
+    "instructor": {
+      "name": "Robert Martin",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+    },
+    "duration": "16 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Master DSA concepts for coding interviews and performance optimization.",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+    "category": "Programming",
+    "popular": false
+  },
+  {
+    "id": 8,
+    "title": "Next.js Full Course",
+    "instructor": {
+      "name": "Chris Johnson",
+      "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12"
+    },
+    "duration": "10 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Learn server-side rendering, routing, and building production-ready apps with Next.js.",
+    "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
+    "category": "Development",
+    "popular": false
+  },
+  {
+    "id": 9,
+    "title": "UI/UX Design for Developers",
+    "instructor": {
+      "name": "Anna Brown",
+      "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4"
+    },
+    "duration": "8 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Learn design principles, user experience, and how to create attractive web interfaces.",
+    "image": "https://images.unsplash.com/photo-1545235617-9465d2a55698",
+    "category": "Design",
+    "popular": false
+  },
+  {
+    "id": 10,
+    "title": "Deep Learning with TensorFlow",
+    "instructor": {
+      "name": "Geoffrey Hinton",
+      "avatar": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+    },
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Build neural networks and deep learning models using TensorFlow.",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "category": "AI",
+    "popular": true
+  }
+]

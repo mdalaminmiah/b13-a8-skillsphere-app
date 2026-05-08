@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+/* DaisyUI (v4) */
+@plugin "daisyui";
+
+/* =========================
+   BASE STYLES
+========================= */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-base-100 text-base-content;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ::selection {
+        background-color: #f97316;
+        color: #ffffff;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0f172a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #f97316;
+        border-radius: 999px;
+    }
+}
+
+/* =========================
+   COMPONENTS
+========================= */
+@layer components {
+    /* Glass card */
+    .glass {
+        @apply bg-base-200/60 backdrop-blur-lg border border-white/10;
+    }
+
+    /* Section title */
+    .section-title {
+        @apply text-3xl md:text-4xl font-bold;
+    }
+
+    /* Primary glowing button */
+    .btn-glow {
+        @apply btn btn-primary shadow-lg shadow-primary/25 hover:shadow-primary/50;
+    }
+
+    /* Hover card effect */
+    .card-hover {
+        @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl;
+    }
+}
+
+/* =========================
+   UTILITIES
+========================= */
+@layer utilities {
+    /* Gradient text */
+    .text-orange-gradient {
+        background: linear-gradient(135deg, #f97316, #f59e0b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
