@@ -4,7 +4,7 @@ import Link from 'next/link'; // Standard Next.js Link
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaGraduationCap } from 'react-icons/fa';
-import { useSession, sigsignUpnOut } from '@/lib/auth-client';
+import { useSession, signUp } from '@/lib/auth-client';
 import Image from 'next/image';
 
 const Navbar = () => {
