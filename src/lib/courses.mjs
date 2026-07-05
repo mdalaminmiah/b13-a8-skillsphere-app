@@ -1,5 +1,5 @@
-// import coursesData from '@/data/courses.json';
-import coursesData from '@/data/courses.json' assert { type: 'json' };
+import coursesData from '@/data/courses.json';
+
 /**
  * Returns all courses (async to mirror a real DB call).
  */
@@ -8,17 +8,28 @@ export async function getAllCourses() {
 }
 
 /**
- * Returns a single course by ID, or null.
+ * Returns a single course by ID (string or number), or null.
  */
 export async function getCourseById(id) {
-    return coursesData.find((c) => c.id === id) ?? null;
+    return coursesData.find((c) => String(c.id) === String(id)) ?? null;
 }
 
 /**
- * Returns courses marked as popular.
+ * Returns courses marked as popular (top-rated picks for the home page).
  */
 export async function getPopularCourses() {
-    return coursesData.filter((c) => c.popular);
+    const popular = coursesData.filter((c) => c.popular);
+    if (popular.length) return popular;
+    // Fallback: top 3 highest-rated courses.
+    return [...coursesData].sort((a, b) => b.rating - a.rating).slice(0, 3);
+}
+
+/**
+ * Returns the newest / trending courses for the "Trending" home section.
+ * Uses the highest-id courses to mimic "New Releases".
+ */
+export async function getTrendingCourses() {
+    return [...coursesData].sort((a, b) => b.id - a.id).slice(0, 6);
 }
 
 /**
