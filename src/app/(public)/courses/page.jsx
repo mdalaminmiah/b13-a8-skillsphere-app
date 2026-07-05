@@ -8,7 +8,13 @@ export const metadata = {
         'Browse all SkillSphere courses in Web Development, Design, and Marketing.',
 };
 
-const CATEGORY_FILTERS = ['All', 'Web Development', 'Design', 'Marketing'];
+const CATEGORY_FILTERS = [
+    'All',
+    'Development',
+    'Programming',
+    'AI',
+    'Design',
+];
 const LEVEL_FILTERS = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
 export default async function CoursesPage({ searchParams }) {
