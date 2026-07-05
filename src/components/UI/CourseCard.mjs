@@ -33,10 +33,13 @@ export default function CourseCard({ course }) {
     const levelStyle = LEVEL_STYLES[course?.level] ?? 'text-slate-400';
 
     return (
-        <Link href={`/courses/${course?.id}`} className="block h-full group">
+        <Link
+            href={`/courseDetails/${course?.id}`}
+            className="block h-full group"
+        >
             <motion.div
                 whileHover={{ y: -8 }}
-                className="relative bg-slate-900 border border-slate-800 rounded-3xl h-full overflow-hidden transition-all duration-300 group-hover:border-orange-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(234,88,12,0.15)]"
+                className="relative flex flex-col bg-slate-900 border border-slate-800 rounded-3xl h-full overflow-hidden transition-all duration-300 group-hover:border-orange-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(234,88,12,0.15)]"
             >
                 {/* Thumbnail Section */}
                 <figure className="relative aspect-[16/10] overflow-hidden">
@@ -62,7 +65,7 @@ export default function CourseCard({ course }) {
                 </figure>
 
                 {/* Content Section */}
-                <div className="p-6 flex flex-col h-[calc(100%-16/10)]">
+                <div className="p-6 flex flex-col flex-1">
                     {/* Category & Level */}
                     <div className="flex items-center justify-between mb-4">
                         <span

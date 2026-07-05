@@ -1,8 +1,13 @@
-import HeroSection from '@/components/home/HeroSection';
+import HeroSection from '@/components/Home/HeroSection.mjs';
 import LearningTips from '@/components/Home/LearningTips.mjs';
 import PopularCourses from '@/components/Home/PopularCourses.mjs';
 import TopInstructors from '@/components/Home/TopInstructors.mjs';
-import { getPopularCourses, getTopInstructors } from '@/lib/courses.mjs';
+import TrendingCourses from '@/components/Home/TrendingCourses.mjs';
+import {
+    getPopularCourses,
+    getTopInstructors,
+    getTrendingCourses,
+} from '@/lib/courses.mjs';
 
 export const metadata = {
     title: 'SkillSphere — Learn Web Dev, Design & Marketing',
@@ -11,16 +16,19 @@ export const metadata = {
 };
 
 export default async function HomePage() {
-    const [popularCourses, topInstructors] = await Promise.all([
-        getPopularCourses(),
-        getTopInstructors(),
-    ]);
+    const [popularCourses, topInstructors, trendingCourses] =
+        await Promise.all([
+            getPopularCourses(),
+            getTopInstructors(),
+            getTrendingCourses(),
+        ]);
     return (
         <>
             <HeroSection />
             <PopularCourses courses={popularCourses} />
+            <TrendingCourses courses={trendingCourses} />
             <LearningTips />
-            <TopInstructors />
+            <TopInstructors instructors={topInstructors} />
         </>
     );
 }

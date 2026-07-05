@@ -1,8 +1,9 @@
 'use client';
 import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { FaArrowRight, FaStar, FaGlobe, FaUserCheck } from 'react-icons/fa';
+import { FaArrowRight, FaStar, FaGlobe } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroSection = () => {
     // 3D Tilt Logic
@@ -51,9 +52,12 @@ const HeroSection = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                            <button className="w-full sm:w-auto px-10 py-5 bg-orange-600 hover:bg-orange-700 text-white font-black rounded-2xl shadow-2xl shadow-orange-600/20 flex items-center justify-center gap-3 transition-transform active:scale-95">
+                            <Link
+                                href="/courses"
+                                className="w-full sm:w-auto px-10 py-5 bg-orange-600 hover:bg-orange-700 text-white font-black rounded-2xl shadow-2xl shadow-orange-600/20 flex items-center justify-center gap-3 transition-transform active:scale-95"
+                            >
                                 Explore Courses <FaArrowRight />
-                            </button>
+                            </Link>
                             <div className="flex items-center gap-4 py-4 px-6 bg-white/5 rounded-2xl border border-white/10">
                                 <div className="flex -space-x-3">
                                     {[1, 2, 3].map((i) => (
