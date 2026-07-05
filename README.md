@@ -4,8 +4,8 @@ A modern online learning platform where users can explore courses, view lessons,
 
 ## 🔗 Live URL
 
-> **Live Site:** _add your Vercel URL here_
-> **GitHub Repo:** _add your repo URL here_
+> **Live Site:** https://b13-a8-skillsphere-app.vercel.app
+> **GitHub Repo:** https://github.com/mdalaminmiah/b13-a8-skillsphere-app
 
 ## 🎯 Purpose
 
